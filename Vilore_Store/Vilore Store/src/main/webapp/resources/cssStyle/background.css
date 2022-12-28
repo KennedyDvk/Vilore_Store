@@ -1,0 +1,24 @@
+body{
+    background: url(../imagem/p1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+h1{
+	color: rgb(255, 255, 255);
+}
+
+tr{
+	color: rgb(255, 255, 255);
+}
+
+.form-group{
+	
+	color: rgb(255, 255, 255);
+}
+
+#table {
+	background-color: rgba(231, 156, 42, 0.884);
+}

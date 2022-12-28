@@ -1,0 +1,116 @@
+* {
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+}
+
+#navi{
+    background-color: rgba(231, 156, 42, 0.884);
+    
+    
+}
+
+
+#nav-container {
+    padding: 0;
+}
+
+.navbar-brand {
+	color: #1b150d;
+}
+
+.img-logo{
+    display: block;
+    position: relative;
+    left: 100px;
+}
+
+.form-signin {
+  display: block;
+  max-width: 600px;
+  padding: 15px;
+  margin-top: 100px;
+  
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#bt {
+  
+  text-decoration: none;
+  font-size: 15px;
+  color: #1b150d;
+  border: 8px solid #fd9917;
+  padding: 10px;
+  border-radius: 16px;
+
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px #fd9917;
+
+  box-shadow: inset 0 0 32px #faac05, 0 0 32px #ff9812;
+
+  position: relative;
+}
+
+#bt::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fd9917;
+  left: 0;
+  top: 120%;
+  transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+  filter: blur(64px);
+  opacity: 0.7;
+}
+
+#bt::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a1208;
+  box-shadow: 0 0 128px 32px #f19722;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+#bt:hover::after,
+#bt:focus::after {
+  opacity: 1;
+}
+
+#bt::before,
+#bt:focus::before {
+  opacity: 1;
+}
+
+#bt:hover,
+#bt:focus {
+  color: #ff7300;
+  text-shadow: none;
+}
+
+
+
+
+
